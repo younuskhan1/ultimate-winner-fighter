@@ -57,8 +57,16 @@ body {
     padding: 10px 10px;
 }
 
+.fa-youtube,
+.fa-tiktok {
+    font-size: 20px;
+}
+
 /* nav css style is ended */
-/* media query sections for mobile devices */
+
+/* media query sections */
+
+/* for small or mobile devices */
 @media screen and (max-width:576px) {
 
     .nav-section,
@@ -75,4 +83,32 @@ body {
         text-align: center;
         margin-bottom: 10px;
     }
+
+    .nav-list>li {
+        margin-left: 0px;
+    }
+}
+
+/* for medium or Tablet devices */
+@media screen and (min-width:577px) and (max-width:992px) {
+
+    .nav-section,
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .nav-logo {
+        margin: 20px 0 30px;
+    }
+
+    .nav-list>li {
+
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .nav-list>li {
+        margin-left: 0px;
+    }
+
 }
