@@ -1,3 +1,9 @@
+/* common shared google font */
+body {
+    font-family: 'Roboto Slab', serif;
+
+}
+
 * {
     padding: 0px;
     margin: 0px;
