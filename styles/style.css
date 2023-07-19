@@ -128,8 +128,6 @@ body {
     align-items: center;
 }
 
-.goat-section-sub-text {}
-
 .goat-section-image {
     width: 55%;
     display: flex;
@@ -142,9 +140,178 @@ body {
 
 }
 
-
-
 /* goat section css style is ended */
+/* gamer section css style is started */
+.gamer-section {
+    background-color: hsl(240, 100%, 99%);
+    min-height: 410px;
+    display: flex;
+    align-items: center;
+}
+
+.gamer-picture {
+    width: 60%;
+}
+
+.gamer-picture img {
+    width: 90%;
+    height: 100%;
+    /* position: right; */
+    padding-left: 100px;
+}
+
+.unleash {
+    width: 100%;
+    font-weight: 900;
+    text-align: end;
+}
+
+.gamer-text {
+    width: 40%;
+    min-height: 410px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 110px;
+
+}
+
+.gamer-button {
+    padding: 12px 30px;
+    border-radius: 20px;
+    background-color: rgb(255, 0, 255);
+    border: 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    margin: 20px 0px;
+}
+
+.gamer-introduction {
+    font-size: 13px;
+    text-align: end;
+
+}
+
+.gamer-heading {
+    font-size: 35px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to bottom, rgb(255, 0, 255), #9400d3);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+/* gamer section css style is ended */
+/* online-game section css style is started */
+.online-section {
+    min-height: 550px;
+    width: 80%;
+    height: 100%;
+    margin: 70px auto 10px;
+}
+
+.online-games-headline {
+    text-align: center;
+    font-size: 30px;
+}
+
+.funny-videos {
+    margin-bottom: 20px;
+    background-image: linear-gradient(to bottom, rgb(255, 0, 255), #9400d3);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.online-games-para {
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.online-game-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: auto;
+}
+
+.image-card img {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.image-card p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* online-game section css style is ended */
+/* play-instant section css style is started */
+.play-instant-section {
+    /* min-height: 450px; */
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.play-instant-text {
+    width: 40%;
+}
+
+.play-instant-image {
+    width: 60%;
+    padding-left: 150px;
+}
+
+.play-instant-image img {
+    width: 80%;
+    /* position: right; */
+}
+
+.play-instant-sub-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.play-instant-para {
+    width: 50%;
+    text-align: end;
+    font-size: 15px
+        /* min-height: 200px; */
+}
+
+.sub-image {
+    height: 270px;
+    width: 200px;
+    position: relative;
+    bottom: 200px;
+    right: 60px;
+}
+
+.sub-image img {
+    height: 100%;
+    width: 100%;
+}
+
+.play-instant-heading {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.color-heading {
+    margin-bottom: 20px;
+    background-image: linear-gradient(to bottom, rgb(255, 0, 255), #9400d3);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+/* play-instant section css style is ended */
 
 
 /* media query sections */
@@ -153,7 +320,9 @@ body {
 @media screen and (max-width:576px) {
 
     .nav-section,
-    .nav-list {
+    .nav-list,
+    .gamer-section,
+    .play-instant-section {
         flex-direction: column;
     }
 
@@ -187,13 +356,100 @@ body {
     .goat-section-image {
         width: 100%;
     }
+
+    .gamer-picture {
+        width: 100%;
+    }
+
+    .gamer-picture img {
+        width: 100%;
+        height: 100%;
+        padding-left: 0;
+    }
+
+    .gamer-text {
+        width: 100%;
+        min-height: 450px;
+        padding-right: 0;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .gamer-introduction {
+        text-align: center;
+        padding: 10px;
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
+    .unleash {
+        text-align: center;
+        margin-top: 10px;
+
+    }
+
+    .online-game-card {
+        grid-template-columns: 1fr;
+        margin-top: 0px;
+    }
+
+    .online-section {
+        margin: 40px auto 60px;
+    }
+
+    .image-card img {
+        padding-top: 50px;
+        margin-top: 0px;
+    }
+
+    .online-games-para {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .play-instant-text {
+        width: 90%;
+    }
+
+    .play-instant-image {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .play-instant-image img {
+        width: 100%;
+        /* padding: 20px 10px; */
+
+    }
+
+    .play-instant-sub-text {
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .play-instant-para {
+        width: 70%;
+        text-align: center;
+    }
+
+    .sub-image {
+        right: 30px;
+    }
+
+
+
 }
 
 /* for medium or Tablet devices */
 @media screen and (min-width:577px) and (max-width:992px) {
 
     .nav-section,
-    .nav-list {
+    .nav-list,
+    .gamer-section,
+    .play-instant-section {
         flex-direction: column;
     }
 
@@ -226,5 +482,84 @@ body {
     .goat-section-image {
         width: 100%;
     }
+
+    .gamer-picture {
+        width: 100%;
+    }
+
+    .gamer-picture img {
+        width: 100%;
+        height: 100%;
+        padding-left: 0;
+    }
+
+    .gamer-text {
+        width: 100%;
+        min-height: 450px;
+        padding-right: 0;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .gamer-introduction {
+        text-align: center;
+        padding: 10px;
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
+    .unleash {
+        text-align: center;
+        margin-top: 10px;
+
+    }
+
+    .online-game-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .online-section {
+        margin: 40px auto 60px;
+    }
+
+    .image-card img {
+        padding-top: 50px;
+        margin-top: 0px;
+    }
+
+    .play-instant-text {
+        width: 90%;
+    }
+
+    .play-instant-image {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .play-instant-image img {
+        width: 100%;
+        /* padding: 20px 10px; */
+
+    }
+
+    .play-instant-sub-text {
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .play-instant-para {
+        width: 70%;
+        text-align: center;
+    }
+
+    .sub-image {
+        right: 30px;
+    }
+
+
 
 }
